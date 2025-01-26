@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('colour', );
-            $table->foreignId('category_id')->constrained('product_categories')->onDelete('cascade');
+            $table->foreignId('category_id')->constrained('products_categories')->onDelete('cascade');
             $table->timestamps();
             $table->boolean('active')->default(true)->after('category_id');
         });
